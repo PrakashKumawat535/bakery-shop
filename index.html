@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Baker's Heart By Vinay – Fresh & Delicious Bakery Items. Order Pizza, Burgers, Sandwiches, Shakes, Coffee, Ice Cream, Momos & Fries on WhatsApp." />
+  <meta name="keywords" content="bakery, pizza, burger, sandwich, shakes, coffee, ice cream, momos, fries, Baker's Heart, Vinay" />
+  <meta name="author" content="Baker's Heart By Vinay" />
+  <meta property="og:title" content="Baker's Heart By Vinay | Fresh & Delicious" />
+  <meta property="og:description" content="Order freshly made food items on WhatsApp. Pizza, Burgers, Shakes & more!" />
+  <meta property="og:type" content="website" />
+  <title>Baker's Heart By Vinay | Fresh & Delicious Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🧁</span>
+        <span class="logo-text">Baker's Heart <em>By Vinay</em></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="https://wa.me/919999999999?text=Hi! I want to place an order." target="_blank" class="nav-cta">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-badge"><i class="fas fa-star"></i> Freshly Made Every Day</p>
+      <h1 class="hero-title">Baker's Heart<br /><span>By Vinay</span></h1>
+      <p class="hero-tagline">Fresh &amp; Delicious Bakery Items</p>
+      <p class="hero-desc">Handcrafted with love — from crispy pizzas to creamy shakes, every bite tells a story.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/919999999999?text=Hi! I want to place an order." target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+        <a href="#menu" class="btn btn-outline">Explore Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU SECTION ==================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Menu</p>
+        <h2 class="section-title">What Would You Like Today?</h2>
+        <p class="section-desc">Explore our wide range of freshly prepared dishes. All items are made to order with the finest ingredients.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-category="pizza"><i class="fas fa-pizza-slice"></i> Pizza</button>
+        <button class="tab-btn" data-category="burger"><i class="fas fa-burger"></i> Burger</button>
+        <button class="tab-btn" data-category="sandwich"><i class="fas fa-bread-slice"></i> Sandwich</button>
+        <button class="tab-btn" data-category="shakes"><i class="fas fa-glass-water"></i> Shakes</button>
+        <button class="tab-btn" data-category="coffee"><i class="fas fa-mug-hot"></i> Coffee</button>
+        <button class="tab-btn" data-category="icecream"><i class="fas fa-ice-cream"></i> Ice Cream</button>
+        <button class="tab-btn" data-category="momos"><i class="fas fa-bowl-food"></i> Momos</button>
+        <button class="tab-btn" data-category="fries"><i class="fas fa-utensils"></i> Fries</button>
+      </div>
+
+      <!-- Menu Cards Container -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrap">
+        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=600&q=80" alt="Baker's Heart bakery interior" class="about-img" loading="lazy" />
+        <div class="about-badge-float">
+          <span class="badge-number">5+</span>
+          <span class="badge-label">Years of Taste</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">A Little Bakery with a Big Heart</h2>
+        <p class="about-text">
+          Baker's Heart By Vinay started as a small passion project — a cozy corner where fresh ingredients meet heartfelt recipes. Born out of a love for good food and warm smiles, Vinay set out to create a place where every dish feels homemade.
+        </p>
+        <p class="about-text">
+          From freshly baked pizzas to the creamiest shakes in town, we pour our soul into every order. We believe food is more than just fuel — it's a memory waiting to be made. Whether you're grabbing a quick sandwich or treating yourself to a decadent ice cream, we're here to make it special.
+        </p>
+        <div class="about-features">
+          <div class="feature-item"><i class="fas fa-leaf"></i><span>Fresh Ingredients</span></div>
+          <div class="feature-item"><i class="fas fa-heart"></i><span>Made with Love</span></div>
+          <div class="feature-item"><i class="fas fa-clock"></i><span>Quick Delivery</span></div>
+          <div class="feature-item"><i class="fas fa-star"></i><span>Top Rated</span></div>
+        </div>
+        <a href="https://wa.me/919999999999?text=Hi! I want to place an order." target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat with Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SECTION ==================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Food Gallery</p>
+        <h2 class="section-title">A Feast for Your Eyes</h2>
+        <p class="section-desc">Every dish is a work of art. Take a look at what's cooking at Baker's Heart.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80" alt="Fresh Pizza" loading="lazy" /><div class="gallery-overlay"><span>Pizza</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Juicy Burger" loading="lazy" /><div class="gallery-overlay"><span>Burger</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1534790566855-4cb788d389ec?w=500&q=80" alt="Fruity Shake" loading="lazy" /><div class="gallery-overlay"><span>Shakes</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Coffee" loading="lazy" /><div class="gallery-overlay"><span>Coffee</span></div></div>
+        <div class="gallery-item large"><img src="https://images.unsplash.com/photo-1500490459234-b28f14cf7bde?w=800&q=80" alt="Ice Cream" loading="lazy" /><div class="gallery-overlay"><span>Ice Cream</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80" alt="French Fries" loading="lazy" /><div class="gallery-overlay"><span>Fries</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f?w=500&q=80" alt="Sandwich" loading="lazy" /><div class="gallery-overlay"><span>Sandwich</span></div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=500&q=80" alt="Momos" loading="lazy" /><div class="gallery-overlay"><span>Momos</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION SECTION ==================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Find Us</p>
+        <h2 class="section-title">Come Visit Us</h2>
+        <p class="section-desc">We're conveniently located in the heart of the city. Stop by or order online!</p>
+      </div>
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Our Address</h4>
+              <p>Baker's Heart By Vinay, Main Market Road,<br />Your City, State – 000000</p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 10:00 PM<br />Sunday: 10:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 99999 99999</p>
+            </div>
+          </div>
+          <a href="https://wa.me/919999999999?text=Hi! I want to know your location." target="_blank" class="btn btn-whatsapp" style="margin-top:1rem">
+            <i class="fab fa-whatsapp"></i> Get Directions on WhatsApp
+          </a>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5401268488!2d77.04417155253906!3d28.527252099999968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0; border-radius:16px;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Baker's Heart By Vinay Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Contact Us</p>
+        <h2 class="section-title">Let's Talk Food!</h2>
+        <p class="section-desc">Have a question or want to place a bulk order? Reach out to us anytime.</p>
+      </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>Call Us</h4>
+          <p>+91 99999 99999</p>
+          <a href="tel:+919999999999" class="btn btn-soft">Call Now</a>
+        </div>
+        <div class="contact-card highlight">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <h4>WhatsApp Order</h4>
+          <p>Quick, easy & instant ordering</p>
+          <a href="https://wa.me/919999999999?text=Hi! I want to place an order." target="_blank" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat Now
+          </a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Visit Us</h4>
+          <p>Main Market Road, Your City</p>
+          <a href="#location" class="btn btn-soft">View Map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🧁</span>
+        <span class="logo-text">Baker's Heart <em>By Vinay</em></span>
+        <p>Freshly made, lovingly served.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Baker's Heart By Vinay. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== STICKY WHATSAPP BUTTON ==================== -->
+  <a href="https://wa.me/919999999999?text=Hi! I want to place an order." target="_blank" class="whatsapp-sticky" id="whatsappSticky" aria-label="Order on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Order Now!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
